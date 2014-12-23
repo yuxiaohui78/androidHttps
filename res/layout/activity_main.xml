@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   android:orientation="vertical">
+
+    <Button
+        android:id="@+id/https_httpclient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Https request using HttpClient" />
+
+    <Button
+        android:id="@+id/https_url_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/https_httpclient"
+        android:layout_margin="10dp"
+        android:text="Https request using HttpsUrlConnection" />
+    
+    <WebView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webview"/>
+
+</LinearLayout>
